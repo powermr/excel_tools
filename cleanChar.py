@@ -15,7 +15,7 @@ def clean_LF(xls_file,sheet_name,save_name):
         wk.save(save_name)
 
 if __name__ == '__main__':
-    xls=r'C:\Users\mengx\PycharmProjects\excel_tools\PMS2.0.xlsx'
-    sheet=r'PMS2.0'
+    xls=input('请输入要处理的excel文件名（全路径）：')
+    sheet=input('请输入sheet名：')
     save_file_name=input('请输入要保存的文件名：')
     clean_LF(xls,sheet,save_file_name)
